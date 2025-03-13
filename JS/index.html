@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+        <label for="" style="font-size: 30px;">Traffic Light</label>
+        <h1 id="color" style="width: fit-content; padding: 10px;"></h1>
+    </div>
+    
+
+
+    <script>
+        let inp = prompt("Traffic Light Color Coding:\nA. Red\nB. Orange\nC. Green")
+        if(inp == 'A' || inp == 'a'){
+            document.getElementById("color").style.backgroundColor="red"
+            document.getElementById("color").innerHTML="Red color means STOP"
+        }else if(inp == 'B' || inp == 'b'){
+            document.getElementById("color").style.backgroundColor="Orange"
+            document.getElementById("color").innerHTML="Yellow means PREPARE TO STOP"
+        }else if(inp == 'C' || inp == 'c'){
+            document.getElementById("color").style.backgroundColor="Green"
+            document.getElementById("color").innerHTML="Green color means GO"
+        }else alert("Oooops, try again!")
+    </script>
+</body>
+</html>
